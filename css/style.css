@@ -22,6 +22,10 @@ header{
   max-height: 100%;
 }
 /* main */
+.select-genre{
+  text-align: center;
+  padding: 15px;
+}
 .albums-container{
   display: flex;
   justify-content: center;
@@ -57,5 +61,5 @@ header{
 .author{
   margin: 10px 0;
   font-size: 16px;
-  color: grey;  
+  color: grey;
 }

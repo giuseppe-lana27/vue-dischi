@@ -25,6 +25,12 @@
     </header>
     <main>
       <div id="app" class="container">
+        <div class="select-genre">
+          <select class="" name="">
+            <option value="">All</option>
+            <option value="" v-for="genre in genres">{{genre}}</option>
+          </select>
+        </div>
         <div class="albums-container">
           <div class="album" v-for="album in albums">
             <img :src="album.poster" :alt="album.title">
