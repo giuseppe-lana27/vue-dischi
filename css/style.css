@@ -1,8 +1,61 @@
+/* reset */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* mix */
 body{
-
+  background-color: #1E2D3B;
+  font-family: 'Lato', sans-serif;
+}
+header{
+  height: 100px;
+  background-color: #2E3A46;
+}
+/* header */
+.logo{
+  height: 100px;
+  padding: 10px;
+}
+.logo img{
+  max-height: 100%;
+}
+/* main */
+.albums-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.album{
+  width: 200px;
+  height: 300px;
+  margin: 30px;
+  padding: 15px;
+  background-color: #2E3A46;
+  text-align: center;
+}
+.album img{
+  width: 100%;
+}
+.album h3{
+  margin: 10px 0;
+  font-size: 16px;
+}
+.album h4{
+  font-size: 16px;
+  color: grey;
+}
+.title{
+  margin: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.author{
+  margin: 10px 0;
+  font-size: 16px;
+  color: grey;  
 }
