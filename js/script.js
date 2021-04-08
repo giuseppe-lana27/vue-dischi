@@ -3,6 +3,7 @@ var app = new Vue({
   data: {
     albums: [],
     genres: [],
+    selectGenre: '',
   },
   mounted: function(){
     axios.get('https://flynn.boolean.careers/exercises/api/array/music')
@@ -14,10 +15,14 @@ var app = new Vue({
         if(!this.genres.includes(item.genre)){
           this.genres.push(item.genre);
         }
-        //console.log(this.genres);
+      });
+      // console.log(this.genres);
+      // bonus 2 ordino gli album in base all'anno di uscita
+      this.albums.sort((old, recent) =>{
+        return old.year - recent.year;
       });
 
     });
-  }
+  },
 
 });

@@ -26,6 +26,10 @@ header{
   text-align: center;
   padding: 15px;
 }
+.genre-selection{
+  width: 80px;
+  padding: 5px;
+}
 .albums-container{
   display: flex;
   justify-content: center;
