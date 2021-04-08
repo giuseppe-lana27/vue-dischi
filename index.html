@@ -25,20 +25,24 @@
     </header>
     <main>
       <div id="app" class="container">
+        <!-- sezione per scelta del genere -->
         <div class="select-genre">
           <select class="genre-selection" name="" v-model="selectGenre">
             <option value="">All</option>
-            <option value="" v-for="genre in genres">{{genre}}</option>
+            <option v-for="genre in genres" :value="genre">{{genre}}</option>
           </select>
         </div>
+        <!-- /sezione per scelta del genere -->
+        <!-- sezione albums -->
         <div class="albums-container">
-          <div class="album" v-for="album in albums">
+          <div class="album" v-for="album in albums" v-show="selectGenre == album.genre || selectGenre == ''">
             <img :src="album.poster" :alt="album.title">
             <h3 class="title">{{album.title}}</h3>
             <h3 class="author">{{album.author}}</h3>
             <h4>{{album.year}}</h4>
           </div>
         </div>
+        <!-- /sezione albums -->        
       </div>
     </main>
     <script src="js/script.js" charset="utf-8"></script>

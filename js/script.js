@@ -21,8 +21,6 @@ var app = new Vue({
       this.albums.sort((old, recent) =>{
         return old.year - recent.year;
       });
-
     });
   },
-
 });
